@@ -1,6 +1,8 @@
+$font-stack: "Ubuntu Mono", Arial;
+
 html {
   background-color: lightpink;
-  font-family: "Ubuntu Mono", Arial;
+  font-family: $font-stack;
   font-size: 1.5em;
 }
 
@@ -30,4 +32,3 @@ main {
   white-space: pre;
 }
 
-/*# sourceMappingURL=root.css.map */
