@@ -1,0 +1,26 @@
+html {
+    background-color: lightpink;
+    font-family: "Ubuntu Mono", Arial;
+    font-size: 1.5em;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-cat-carrier {
+    float: right;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.cat-carrier {
+    white-space: pre;
+}
