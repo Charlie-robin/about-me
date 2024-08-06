@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>beep boop</title>
-    </head>
-    <body>
-        <main>
-            boop beep
-        </main>
-    </body>
+
+<head>
+    <title>beep boop</title>
+
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="js/load-cat.js"></script>
+</head>
+
+<body>
+    <main>
+        <article id="personal-intro">
+            <h1>Hi!</h1>
+            My name is Eyrim, I'm a software engineer from England.
+
+            I tend to focus more on backend development, though I'm able to work full stack when required. I have
+            recently developed a particular interest in lower level programming. Though my main experience is in Java
+            and C#.
+            <br />
+            <br />
+            My current favourite languages are Golang and C. Golang because of how quick it is to work with and the fact
+            it still provides you with some lower level control, without abstracting too much away (looking at you
+            Java). C is fun because of how many "ohhhhh that's why we do it like that" moments I have when learning
+            about it.
+        </article>
+        <article id="projects">
+            <section>
+                <a href="https://github.com/Eyrim/circuit-sharp">A really terrible circuit schematic builder</a>
+                <aside class="project-description">
+                    This was a school project where I had to complete a project that covered enough different things to
+                    get a good mark. So I chose a full stack web application using ASP.NET MVC with C#, I bit off way
+                    more than I could chew at the time and so didn't have much time to properly design it (or fix design
+                    shortcomings). It uses a grid of cells and images of both IEC and US electrical components. The user
+                    picks the component they want to place and clicks on grid squares. The app supports saving files
+                    locally in JSON format and then loading them in again.
+                </aside>
+            </section>
+            <section>
+                <a href="https://github.com/Eyrim/tree-sitter-gherkin">A TreeSitter parser for the Gherkin language used
+                    in system testing</a>
+                <aside class="project-description">
+                    I use Neovim as my main editor, which is famous for having poor Java support. At work we use both
+                    Java and the Cucumber testing framework which uses a language called Gherkin. TreeSitter is a tool
+                    for building Concrete Syntax Trees from an arbitrary source code input, providing there is a parser
+                    available. I am working on writing a grammar for the Gherkin language as a way of contributing to
+                    improving Neovim's support for different languages. I also want a parser as I have a project idea
+                    which will require a parser to be available for Gherkin.
+                </aside>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <span id="footer-cat-carrier" class="cat-carrier">
+        </span>
+    </footer>
+</body>
+
 </html>
