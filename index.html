@@ -17,23 +17,35 @@
 
 <body>
     <main>
-        <article id="personal-intro">
-            <h1>Hi!</h1>
-            My name is Eyrim, I'm a software engineer from England.
+        <article id="introduction">
+            <img id="profile-picture"
+                src="https://avatars.githubusercontent.com/u/62777325?s=400&u=a0e2c8122c619da848093c5a5127faa7b2a969df&v=4"
+                alt="A profile picture of a cartoon person standing in front of a non-binary pride flag, wearing a black hoody and pulling the hood over their face" />
+            <section id="personal-intro">
+                <h1>Hi!</h1>
+                My name is Eyrim, I'm a software engineer from England.
 
-            I tend to focus more on backend development, though I'm able to work full stack when required. I have
-            recently developed a particular interest in lower level programming. Though my main experience is in Java
-            and C#.
-            <br />
-            <br />
-            My current favourite languages are Golang and C. Golang because of how quick it is to work with and the fact
-            it still provides you with some lower level control, without abstracting too much away (looking at you
-            Java). C is fun because of how many "ohhhhh that's why we do it like that" moments I have when learning
-            about it.
+                I tend to focus more on backend development, though I'm able to work full stack when required (just
+                badly :p). I have
+                recently developed a particular interest in lower level programming. Though my main experience is in
+                Java
+                and C#.
+                <br />
+                <br />
+                My current favourite languages are Golang and C. Golang because of how quick it is to work with and the
+                fact
+                it still provides you with some lower level control, without abstracting too much away (looking at you
+                Java). C is fun because of how many "ohhhhh that's why we do it like that" moments I have when learning
+                about it.
+            </section>
         </article>
+
         <article id="projects">
+            <h2>Projects</h2>
             <section>
-                <a href="https://github.com/Eyrim/circuit-sharp">A really terrible circuit schematic builder</a>
+                <h3>
+                    <a href="https://github.com/Eyrim/circuit-sharp">A really terrible circuit schematic builder</a>
+                </h3>
                 <aside class="project-description">
                     This was a school project where I had to complete a project that covered enough different things to
                     get a good mark. So I chose a full stack web application using ASP.NET MVC with C#, I bit off way
@@ -44,8 +56,11 @@
                 </aside>
             </section>
             <section>
-                <a href="https://github.com/Eyrim/tree-sitter-gherkin">A TreeSitter parser for the Gherkin language used
-                    in system testing</a>
+                <h3>
+                    <a href="https://github.com/Eyrim/tree-sitter-gherkin">A TreeSitter parser for the Gherkin language
+                        used
+                        in system testing</a>
+                </h3>
                 <aside class="project-description">
                     I use Neovim as my main editor, which is famous for having poor Java support. At work we use both
                     Java and the Cucumber testing framework which uses a language called Gherkin. TreeSitter is a tool
@@ -53,6 +68,61 @@
                     available. I am working on writing a grammar for the Gherkin language as a way of contributing to
                     improving Neovim's support for different languages. I also want a parser as I have a project idea
                     which will require a parser to be available for Gherkin.
+                </aside>
+            </section>
+        </article>
+        <article id="favourite-things-lists">
+            <section>
+                <h2>Favourite Foods</h2>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Dr. Pepper</li>
+                    <li>Chicken Katsu</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Favourite Technologies</h2>
+                <ol>
+                    <li>Linux</li>
+                    <li>Neovim</li>
+                    <li>Golang (Currently)</li>
+                    <li>C</li>
+                </ol>
+            </section>
+
+        </article>
+        <article>
+            <h2>Well Designed Sites</h2>
+
+            <section id="good-websites">
+                <h3 class="website-link">
+                    <a href="https://nixos.org/" target="_blank">NixOS:</a>
+                </h3>
+                <aside class="good-website-description">
+                    One of the reasons I like this website is due to how rare it is for this style of Linux distro
+                    to have such a good looking and usable website. It's easy to find everything you may want to do
+                    and find out initially, and its clear how it could be useful for returning users looking for
+                    documentation/support etc.
+
+                    As a comparison, the <a href="" target="_blank">Arch Linux Website</a> is, in my opinion, pretty
+                    bad. NixOS is quite a niche distribution which will largely only be used by Linux enthusiasts,
+                    similar to Arch. However, unlike Arch, the website has been designed to have a really good UX
+                    and be welcoming to the distro.
+                </aside>
+                <h3 class="website-link">
+                    <a href="https://www.rust-lang.org/" target="_blank">Rust Lang:</a>
+                </h3>
+                <aside class="good-website-description">
+                    The rust-lang website is very well designed, it is clearly laid out, with the most likely things
+                    the user is looking for further up, and less used things such as maintainership and NPM funding
+                    further down. The download page is very refreshing, I setup linux quite often and rust is always
+                    one of the first things I install, having platform-agnostic install methods presented to the
+                    user immediately on the page is a big benefit.
+
+                    I also like how simple the website is, navigating it with purely the keyboard is quite easy. The
+                    site doesn't necessitate any specialised accessibilty methods due to how simple it is. Making
+                    the site better for able-bodied users as well as disabled users.
                 </aside>
             </section>
         </article>

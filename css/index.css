@@ -1,6 +1,16 @@
 article {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 1%;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile-picture {
+    width: 50%;
+    height: 50%;
 }
 
 #personal-intro {
@@ -20,5 +30,34 @@ article {
     margin-bottom: 0.5%;
 }
 
-.project-description {
+#projects .project-description {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
 }
+
+#favourite-things-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+#favourite-things-lists section {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#good-websites {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 10% 75%;
+}
+
+.good-website-description {
+    margin-bottom: 1%;
+}
+
+#good-websites .website-link {
+    text-align: center;
+}
+
