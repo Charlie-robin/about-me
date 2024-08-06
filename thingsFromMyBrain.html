@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>beep boop</title>
+
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/thingsFromMyBrain.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="js/load-cat.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Things I Find Interesting</h1>
+        <article>
+            <h2>
+                What is a Null Pointer?
+            </h2>
+            <section>
+                In my recent travels into the land of C and low level programming. I came across <code>NULL</code> in C.
+                In C, NULL is simply a pointer to memory address <code>0x000000</code>, which is reserved by the
+                Operating System. Hence throwing an error. I would assume C catches this error itself as an attempt to
+                access forbidden memory would typically cause a program to be killed by the host OS. I just find it
+                interesting that in some languages these etherial ever-looming concepts become extremly tangible.
+            </section>
+        </article>
+
+        <article>
+            <h2>
+                Why do we end lines in semicolons?
+            </h2>
+            <section>
+                I've not been able to find very much evidence for this, but I've been playing around with a bit of x86
+                assembly lately (for understanding, not real projects), and seeing some of my code look like this:
+                <p>
+                    <code>
+                        mv aa, 0x005000 <span class="assembly-comment">; move a value into something</span><br />
+                        cmp aa, 0x000000 <span class="assembly-comment">; compare aa against someting</span><br />
+                        lt myLabel <span class="assembly-comment">; go to another subroutine</span><br />
+                    </code>
+                </p>
+
+                This is a common pattern in assembly, semicolons are used for comments, and most lines end in these
+                comments due to the nature of the language. My theory is that this naturally translated into
+                higher-level languages, as the creators of most modern high-level language will have gotten their start
+                in the realm of low-level.
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <span aria-hidden="true" id="footer-cat-carrier" class="cat-carrier"></span>
+        <button id="things-from-my-brain">
+            <a href="/">Home</a>
+        </button>
+    </footer>
+
+</body>
+
+</html>
